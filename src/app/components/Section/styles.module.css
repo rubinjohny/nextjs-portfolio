@@ -1,0 +1,10 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  max-width: var(--max-width);
+  flex: 1;
+}

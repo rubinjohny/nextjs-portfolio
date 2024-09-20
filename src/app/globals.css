@@ -1,5 +1,5 @@
 :root {
-  --max-width: 1100px;
+  --max-width: 1700px;
   --spacing: 4px;
 }
 
@@ -17,10 +17,18 @@ body {
 [data-theme="dark"] body {
   --foreground-color: #fff;
   --background-color: #000;
+
+  --intro-bg-trans-color-1: #0a0a0a;
+  --intro-bg-trans-color-2: #191717;
+  --intro-bg-trans-color-3: #232121;
 }
 
 [data-theme="light"],
 [data-theme="light"] body {
-  --foreground-color: #000;
+  --foreground-color: #222222;
   --background-color: #fff;
+
+  --intro-bg-trans-color-1: #e7eaee;
+  --intro-bg-trans-color-2: #cadbe3;
+  --intro-bg-trans-color-3: #b6ddf6;
 }
