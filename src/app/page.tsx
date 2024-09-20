@@ -1,10 +1,13 @@
-import { LandingSection } from "@/app/sections/LandingSection/LandingSection";
+import { LandingSection } from "@/app/sections/Landing/LandingSection";
+import { CheckUserWidth_Provider } from "./contexts/checkWindowWidth";
+import { AboutSection } from "./sections/About/AboutSection";
 
 const Home = () => {
   return (
-    <div>
+    <CheckUserWidth_Provider>
       <LandingSection />
-    </div>
+      <AboutSection />
+    </CheckUserWidth_Provider>
   );
 };
 

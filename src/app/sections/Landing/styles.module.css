@@ -1,0 +1,67 @@
+.outer-container {
+  background: linear-gradient(
+    180deg,
+    var(--intro-bg-trans-color-1),
+    var(--intro-bg-trans-color-2),
+    var(--intro-bg-trans-color-3)
+  );
+  background-size: 600% 600%;
+  animation: BackgroundTransistion 20s ease infinite;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.container {
+  max-width: var(--max-width);
+}
+
+.main {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom-section {
+  position: absolute;
+  bottom: 25%;
+  margin: 0 20px;
+  font-size: 1.25rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bottom-section {
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    bottom: 20%;
+    font-size: 1.5rem;
+  }
+}
+
+.learn-more-btn {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 300px;
+}
+
+@keyframes BackgroundTransistion {
+  0% {
+    background-position: 51% 0%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 51% 0%;
+  }
+}
