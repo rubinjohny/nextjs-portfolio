@@ -93,6 +93,7 @@
     font-size: 16px;
     padding: calc(5 * var(--spacing));
     max-height: 260px;
+    overflow-y: auto;
   }
 
   .company-logo-container {
