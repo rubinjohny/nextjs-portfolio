@@ -1,0 +1,7 @@
+.description {
+  padding: calc(5 * var(--spacing));
+  margin: auto;
+  line-height: 2;
+  max-width: calc(var(--max-width) - 500px);
+  text-align: center;
+}

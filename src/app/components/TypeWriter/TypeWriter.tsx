@@ -14,7 +14,6 @@ export const TypeWriter = () => {
 
   return (
     <>
-      <div id="typewriter-component" />
       <TypewriterComponent
         options={{
           autoStart: true,

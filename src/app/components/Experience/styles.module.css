@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  border: 1px solid white;
+  border-radius: calc(4 * var(--spacing));
+}
+.title-section {
+  background-color: #7953cd;
+  text-align: center;
+  padding: calc(3 * var(--spacing)) calc(2 * var(--spacing));
+  font-size: 36px;
+  color: white;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.company-card {
+  border-radius: 12px;
+  background-color: white;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  padding: calc(3 * var(--spacing));
+  margin-top: calc(5 * var(--spacing));
+}
+
+.company-logo-container {
+  display: flex;
+  justify-content: center;
+
+  & > img {
+    background-color: white;
+    width: auto;
+    height: 40px;
+    max-width: 200px;
+  }
+}
+
+.sub-title-cont {
+  display: flex;
+  margin-top: calc(4 * var(--spacing));
+  gap: calc(2 * var(--spacing));
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.term-loc-cont {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(4 * var(--spacing));
+  gap: calc(2 * var(--spacing));
+  justify-content: space-between;
+  align-items: center;
+  color: #a9a9a9;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: calc(2 * var(--spacing));
+    font-size: 14px;
+  }
+}
+
+.summary-cont {
+  padding: calc(2 * var(--spacing));
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  max-height: 150px;
+  overflow-y: scroll;
+  display: flex;
+  flex: 1;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .company-card {
+    min-width: 360px;
+    max-width: 500px;
+    min-height: 550px;
+  }
+  .summary-cont {
+    line-height: 1.75;
+    font-size: 16px;
+    padding: calc(5 * var(--spacing));
+    max-height: 260px;
+  }
+
+  .company-logo-container {
+    padding: calc(5 * var(--spacing));
+
+    & > img {
+      background-color: white;
+      width: auto;
+      height: 60px;
+      max-width: 300px;
+    }
+  }
+
+  .sub-title-cont {
+    font-size: 18px;
+  }
+
+  .term-loc-cont {
+    flex-direction: row;
+  }
+}
