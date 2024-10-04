@@ -1,10 +1,34 @@
 .section {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
 }
 
 .body {
   max-width: var(--max-width);
-  flex: 1;
+  align-items: center;
+}
+
+.section-header {
+  background-color: #26597e;
+  color: #dffdff;
+
+  min-height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 1rem;
+  font-weight: 500;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .section-header {
+    font-size: 2rem;
+    letter-spacing: 1.2rem;
+  }
 }

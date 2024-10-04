@@ -2,11 +2,11 @@
   border: 1px solid var(--foreground-color);
   border-radius: 20px;
   display: flex;
-  padding: 2px;
+  padding: calc(0.5 * var(--spacing));
 
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: calc(5 * var(--spacing));
+  top: calc(5 * var(--spacing));
 }
 
 .switch-icons {

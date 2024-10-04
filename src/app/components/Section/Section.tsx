@@ -7,3 +7,11 @@ export const Section = ({ children }: { children: React.ReactNode }) => {
     </div>
   );
 };
+
+export const SectionHeader = ({ title }: { title: string }) => {
+  return (
+    <div className={styles["section-header"]}>
+      <span>{title}</span>
+    </div>
+  );
+};
