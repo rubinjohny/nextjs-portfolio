@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 import EmblaCarousel from "@/app/components/EmblaCarousal/EmblaCarousel";
-import { companies, Company } from "@/app/utils/data";
+import { companies, Company } from "@/app/utils/data/experience";
 import { PersonBadge, LocationIcon, CalendarIcon } from "@/app/utils/icons";
 import Image from "next/image";
 import { EmblaOptionsType } from "embla-carousel";

@@ -6,7 +6,9 @@
 
 .body {
   max-width: var(--max-width);
-  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
 }
 
 .section-header {
