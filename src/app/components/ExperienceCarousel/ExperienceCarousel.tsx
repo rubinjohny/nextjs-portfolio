@@ -7,12 +7,8 @@ import {
 } from "embla-carousel";
 import styles from "./styles.module.css";
 
-import {
-  PrevButton,
-  NextButton,
-  usePrevNextButtons,
-} from "./EmblaCarouselArrowButtons";
-import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
+import { PrevButton, NextButton, usePrevNextButtons } from "./ArrowButtons";
+import { DotButton, useDotButton } from "./DotButton";
 import useEmblaCarousel from "embla-carousel-react";
 import classNames from "classnames";
 
@@ -25,7 +21,7 @@ const TWEEN_FACTOR_BASE = 0.92;
 const numberWithinRange = (number: number, min: number, max: number): number =>
   Math.min(Math.max(number, min), max);
 
-const EmblaCarousel: React.FC<PropType> = (props) => {
+const ExperienceCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const tweenFactor = useRef(0);
@@ -105,7 +101,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       .on("reInit", tweenScale)
       .on("scroll", tweenScale)
       .on("slideFocus", tweenScale);
-  }, [emblaApi, tweenScale]);
+  }, [emblaApi, tweenScale, setTweenFactor, setTweenNodes]);
 
   return (
     <div className={styles["embla"]}>
@@ -141,4 +137,4 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   );
 };
 
-export default EmblaCarousel;
+export default ExperienceCarousel;

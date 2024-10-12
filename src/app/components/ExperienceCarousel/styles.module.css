@@ -95,7 +95,7 @@
 }
 
 .embla__dot:after {
-  box-shadow: inset 0 0 0 2px var(--detail-medium-contrast);
+  box-shadow: inset 0 0 0 2px #a9a9a9;
   width: calc(3 * var(--spacing));
   height: calc(3 * var(--spacing));
   border-radius: 50%;
@@ -135,6 +135,6 @@
   .embla__dot:after {
     width: calc(5 * var(--spacing));
     height: calc(5 * var(--spacing));
-    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    box-shadow: inset 0 0 0 0.2rem #a9a9a9;
   }
 }

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  flex: 1 1;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+  }
+}

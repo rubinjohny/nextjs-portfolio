@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./styles.module.css";
-import { skills, Skill } from "@/app/utils/data";
+import { skills, Skill } from "@/app/utils/data/skills";
 
 const fadeInAnimationVariants = {
   initial: {
