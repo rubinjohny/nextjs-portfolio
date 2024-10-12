@@ -18,16 +18,6 @@ export const useWidth = () => {
 
   const [device, setDevice] = useState<Device>(undefined);
 
-  if (typeof window === undefined)
-    return {
-      width: 0,
-      isMobile: false,
-      isTablet: false,
-      isLaptop: false,
-      isDesktop: false,
-      isUltrawide: false,
-    };
-
   useEffect(() => {
     const handleResize = () => {
       const innerWidth = window.innerWidth;
@@ -59,6 +49,16 @@ export const useWidth = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [width]);
+
+  if (typeof window === undefined)
+    return {
+      width: 0,
+      isMobile: false,
+      isTablet: false,
+      isLaptop: false,
+      isDesktop: false,
+      isUltrawide: false,
+    };
 
   return {
     width,
