@@ -18,7 +18,9 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body className={ArimoFont.className}>
-        <ThemeProvider enableSystem>{children}</ThemeProvider>
+        <div id="root">
+          <ThemeProvider enableSystem>{children}</ThemeProvider>
+        </div>
       </body>
     </html>
   );

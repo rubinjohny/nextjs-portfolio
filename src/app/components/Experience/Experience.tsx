@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import EmblaCarousel from "@/app/components/EmblaCarousal/EmblaCarousel";
+import ExperienceCarousel from "@/app/components/ExperienceCarousel/ExperienceCarousel";
 import { companies, Company } from "@/app/utils/data/experience";
 import { PersonBadge, LocationIcon, CalendarIcon } from "@/app/utils/icons";
 import Image from "next/image";
@@ -59,7 +59,7 @@ export const Experience = () => {
       <div className={styles["title-section"]}>
         <span>Experience</span>
       </div>
-      <EmblaCarousel slides={experienceCards} options={OPTIONS} />
+      <ExperienceCarousel slides={experienceCards} options={OPTIONS} />
     </div>
   );
 };

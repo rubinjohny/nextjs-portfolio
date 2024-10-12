@@ -28,25 +28,13 @@ const contentVariants = {
   },
 };
 
-type ProjectCards = {
+type ProjectCardProps = {
   title: string;
-  description: string;
   image: string;
-  gif: string | undefined;
-  carouselImages: string[];
-  tags: string;
   onExpand: () => void;
 };
 
-export const ProjectCard = ({
-  title,
-  description,
-  image,
-  gif,
-  carouselImages,
-  tags,
-  onExpand,
-}: ProjectCards) => {
+export const ProjectCard = ({ title, image, onExpand }: ProjectCardProps) => {
   return (
     <motion.div className={styles["container"]}>
       <motion.div className={styles["base-card"]} variants={imgVariants}>
@@ -61,7 +49,11 @@ export const ProjectCard = ({
         />
       </motion.div>
 
-      <motion.div className={styles["content"]} variants={contentVariants}>
+      <motion.div
+        className={styles["content"]}
+        variants={contentVariants}
+        onClick={() => onExpand()}
+      >
         <div className={styles["title-container"]}>
           <span>{title}</span>
         </div>

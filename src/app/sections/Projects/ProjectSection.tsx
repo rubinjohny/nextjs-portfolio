@@ -1,25 +1,32 @@
 "use client";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 import { Section, SectionHeader } from "@/app/components/Section/Section";
-import { projects } from "@/app/utils/data/projects";
+import { projects, Project } from "@/app/utils/data/projects";
 import { ProjectCard } from "@/app/components/ProjectCard/ProjectCard";
+import { ProjectSheet } from "@/app/components/ProjectSheet/ProjectSheet";
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 1,
+    },
+  },
+};
+
+type ProjectData = Project | undefined;
 
 export const ProjectSection = () => {
-  const containerVariants = {
-    hidden: {
-      opacity: 0,
-      y: 100,
-    },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 1,
-      },
-    },
-  };
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const [projectData, setProjectData] = useState<ProjectData>(undefined);
 
   return (
     <>
@@ -47,19 +54,24 @@ export const ProjectSection = () => {
                   key={i}
                   title={project.title}
                   onExpand={() => {
-                    console.log("on expand");
+                    setIsSheetOpen(true);
+                    setProjectData(project);
                   }}
-                  description={project.description}
                   image={project.cardImage}
-                  gif={project.gif}
-                  carouselImages={project.carouselImages}
-                  tags={project.tags}
                 />
               );
             })}
           </motion.div>
         </div>
       </Section>
+      <ProjectSheet
+        open={isSheetOpen}
+        onClose={() => {
+          setIsSheetOpen(false);
+          setProjectData(undefined);
+        }}
+        data={projectData}
+      />
     </>
   );
 };

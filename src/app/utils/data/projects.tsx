@@ -1,3 +1,12 @@
+export type Project = {
+  title: string;
+  description: string;
+  cardImage: string;
+  gif: string | undefined;
+  carouselImages: string[];
+  tags: string;
+};
+
 export const projects = [
   {
     title: "Taeble",
