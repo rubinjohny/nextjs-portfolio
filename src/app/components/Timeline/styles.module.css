@@ -1,0 +1,152 @@
+.timeline {
+  max-width: 1000px;
+  width: calc(90% - 40px);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 60px;
+  padding-bottom: 30px;
+
+  & > ul {
+    list-style: none;
+  }
+}
+
+.timeline::before {
+  content: "";
+  width: 5px;
+  background-color: white;
+  height: 100%;
+  position: absolute;
+  left: -40px;
+  transform: translate(-50%, 0px);
+}
+
+.node {
+  display: flex;
+  flex: 1;
+  margin-top: 50px;
+  color: white;
+  position: relative;
+
+  & > .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -20px;
+    left: -65px;
+
+    & > .inner-icon {
+      border-radius: 50%;
+      background-color: var(--darker-blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      right: 5px;
+      left: 5px;
+    }
+  }
+
+  & > .content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: var(--blue);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+
+    & > .title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    & > .description {
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    & > .date {
+      text-align: left;
+      position: absolute;
+      top: -30px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .timeline {
+    margin-left: 0px;
+    & > ul > li {
+      width: 50%;
+    }
+
+    & > ul > li:nth-child(odd) {
+      float: left;
+      clear: right;
+
+      & > .node {
+        margin-right: 40px;
+
+        & > .icon {
+          left: auto;
+          right: -65px;
+        }
+
+        & > .content {
+          border-radius: 20px 0px 20px 20px;
+          & > .date {
+            position: absolute;
+            top: -15px;
+            left: unset;
+            right: -100%;
+            width: 80%;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    & > ul > li:nth-child(even) {
+      float: right;
+      clear: left;
+
+      & > .node {
+        margin-left: 40px;
+
+        & > .icon {
+          right: auto;
+          left: -65px;
+        }
+
+        & > .content {
+          border-radius: 0px 20px 20px 20px;
+
+          & > .date {
+            position: absolute;
+            top: -15px;
+            left: -100%;
+            right: unset;
+            text-align: end;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+
+  .timeline::before {
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+}

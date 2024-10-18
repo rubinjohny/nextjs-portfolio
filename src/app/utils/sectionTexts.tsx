@@ -1,2 +1,5 @@
 export const AboutMeText =
   "I kickstarted my career in 2017 as a software engineer in Kerala, India, right after earning my bachelor’s in computer science. After spending over two years with two startups, I moved to San Francisco to pursue my master’s and spent five years in Silicon Valley, working with some amazing companies and leaders in tech. I’ve built over 10 professional web and mobile apps from scratch, and I’m always diving into interesting freelance gigs, research projects, or just tinkering with systems to see what breaks (and fixing them, of course!). Think of me like Bob the Builder, but for technology. In 2024, after getting married, I made the move to Sydney, Australia. My passion for building tech keeps me going, and it honestly never feels like work! Outside of coding, I’m a football fanatic (GGMU!), still adjusting to those 4 am match kickoffs with coffee in hand.";
+
+export const JourneyText =
+  "I’m halfway to retirement (but who’s counting?)! Along the way, I’ve lived on three continents and tackled some awesome challenges. Check out some of my favorite personal milestones from the journey so far!";

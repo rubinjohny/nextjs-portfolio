@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 import { splitStringUsingRegex } from "@/app/utils/helperFunctions";
-import { AboutMeText } from "@/app/utils/data";
+import { AboutMeText } from "@/app/utils/sectionTexts";
 
 const charVariants = {
   hidden: {

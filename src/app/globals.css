@@ -1,6 +1,18 @@
 :root {
   --max-width: 1700px;
   --spacing: 4px;
+  --lightest-blue: #caf0f8;
+  --lighter-blue: #90e0ef;
+  --light-blue: #00b4d8;
+  --blue: #0077b6;
+  --darker-blue: #26597e;
+  --darkest-blue: #003049;
+
+  --darker-green: #354f52;
+  --lightest-green: #cad2c5;
+  --lighter-green: #84a98c;
+  --light-green: #52796f;
+  --green: #31572c;
 }
 
 * {
