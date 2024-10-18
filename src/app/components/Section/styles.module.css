@@ -12,8 +12,8 @@
 }
 
 .section-header {
-  background-color: #26597e;
-  color: #dffdff;
+  background-color: var(--darker-blue);
+  color: var(--lightest-blue);
 
   min-height: 60px;
 

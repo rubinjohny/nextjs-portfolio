@@ -7,11 +7,11 @@
 }
 
 .title {
-  background-color: #7953cd;
+  background-color: var(--darkest-blue);
   text-align: center;
   padding: calc(3 * var(--spacing)) calc(2 * var(--spacing));
-  font-size: 36px;
   color: white;
+  font-size: 20px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
@@ -56,10 +56,14 @@
   border-radius: 30px;
   margin-top: calc(2 * var(--spacing));
   letter-spacing: 1.15px;
+  font-size: 12px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
   .skills_container {
     padding: calc(7 * var(--spacing));
     gap: calc(8 * var(--spacing));
@@ -68,7 +72,7 @@
   }
 
   .skill-title-container {
-    font-size: 1.25rem;
+    font-size: 18px;
     padding: calc(3 * var(--spacing)) calc(5 * var(--spacing));
   }
 }

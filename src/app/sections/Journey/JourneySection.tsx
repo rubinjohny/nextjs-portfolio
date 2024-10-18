@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 import { Section, SectionHeader } from "@/app/components/Section/Section";
 import { Timeline } from "@/app/components/Timeline/Timeline";
+import { JourneyText } from "@/app/utils/sectionTexts";
 
 export const JourneySection = () => {
   return (
@@ -8,6 +9,7 @@ export const JourneySection = () => {
       <SectionHeader title="Journey" />
       <Section>
         <div className={styles["container"]}>
+          <span>{JourneyText}</span>
           <Timeline />
         </div>
       </Section>

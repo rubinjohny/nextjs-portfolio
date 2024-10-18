@@ -1,13 +1,4 @@
 .outer-container {
-  background: linear-gradient(
-    180deg,
-    var(--intro-bg-trans-color-1),
-    var(--intro-bg-trans-color-2),
-    var(--intro-bg-trans-color-3)
-  );
-  background-size: 600% 600%;
-  animation: BackgroundTransistion 20s ease infinite;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -50,18 +41,4 @@
   right: 0;
   margin: auto;
   max-width: 300px;
-}
-
-@keyframes BackgroundTransistion {
-  0% {
-    background-position: 51% 0%;
-  }
-
-  50% {
-    background-position: 50% 100%;
-  }
-
-  100% {
-    background-position: 51% 0%;
-  }
 }
