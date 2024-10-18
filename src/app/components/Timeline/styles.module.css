@@ -1,0 +1,114 @@
+.timeline {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.item {
+  margin: 20px;
+  padding: 20px;
+  background-color: aquamarine;
+  min-height: 30px;
+  clear: right;
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  position: relative;
+
+  .item-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -25px;
+    margin: unset;
+    left: -25px;
+    right: unset;
+    transform: translate(-50%, 50%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: white;
+    left: -25px;
+    top: 0px;
+    bottom: 0px;
+    height: calc(100% + 40px);
+    transform: translate(-50%, 0%);
+  }
+
+  &:last-child::before {
+    height: 50%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .timeline {
+    max-width: 1000px;
+    width: 90%;
+    margin-left: unset;
+  }
+  .item {
+    width: 45%;
+    position: relative;
+    margin: 0;
+    margin: 30px 0;
+  }
+
+  .item .item-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .item:nth-child(odd) .item-icon {
+    top: 0px;
+    transform: translate(50%, -50%);
+    right: -40px;
+    left: unset;
+  }
+
+  .item:nth-child(even) .item-icon {
+    top: 0px;
+    transform: translate(-50%, -50%);
+    left: -40px;
+    right: unset;
+  }
+
+  .timeline .item:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline .item:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+
+  /* line element */
+  .timeline .item::before {
+    top: 0px;
+    bottom: 0;
+    height: calc(100% + 60px);
+  }
+
+  .timeline .item:nth-child(odd)::before {
+    right: -40px;
+    left: auto;
+    transform: translateX(50%);
+  }
+  .timeline .item:nth-child(even)::before {
+    left: -40px;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .timeline .item:last-child::before {
+    height: 0%;
+  }
+}
