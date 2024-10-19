@@ -53,10 +53,12 @@ export const Expertise = () => {
         <span>Expertise</span>
       </div>
 
-      <div className={styles["skills_container"]}>
-        {skills.map((skill, i) => (
-          <SkillItem key={i} title={skill.title} img={skill.img} index={i} />
-        ))}
+      <div className={styles["skills-outer-container"]}>
+        <div className={styles["skills-container"]}>
+          {skills.map((skill, i) => (
+            <SkillItem key={i} title={skill.title} img={skill.img} index={i} />
+          ))}
+        </div>
       </div>
     </div>
   );

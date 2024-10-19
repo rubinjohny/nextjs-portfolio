@@ -51,6 +51,13 @@
   color: #000;
   text-decoration: underline;
   font-size: 14px;
+
+  & > span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 150px;
+  }
 }
 
 .term-loc-cont {
@@ -67,24 +74,28 @@
     align-items: center;
     gap: calc(2 * var(--spacing));
     font-size: 14px;
+
+    & > span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 150px;
+    }
   }
 }
 
 .summary-cont {
   padding: calc(2 * var(--spacing));
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.35;
   text-align: center;
-  max-height: 150px;
-  overflow-y: scroll;
-  display: flex;
-  flex: 1;
+  font-weight: 500;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .title-section {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .company-card {
@@ -93,11 +104,9 @@
     min-height: 550px;
   }
   .summary-cont {
-    line-height: 1.75;
+    line-height: 1.5;
     font-size: 16px;
     padding: calc(5 * var(--spacing));
-    max-height: 260px;
-    overflow-y: auto;
   }
 
   .company-logo-container {
@@ -113,6 +122,10 @@
 
   .sub-title-cont {
     font-size: 18px;
+
+    & > span {
+      max-width: 250px;
+    }
   }
 
   .term-loc-cont {
