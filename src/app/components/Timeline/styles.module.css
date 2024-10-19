@@ -78,6 +78,7 @@
       text-align: left;
       position: absolute;
       top: -30px;
+      color: var(--foreground-color);
     }
   }
 }
