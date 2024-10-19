@@ -16,7 +16,14 @@
   border-top-right-radius: 16px;
 }
 
-.skills_container {
+.skills-outer-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-container {
   display: flex;
   padding: calc(5 * var(--spacing));
   gap: calc(4 * var(--spacing));
@@ -64,7 +71,7 @@
   .title {
     font-size: 28px;
   }
-  .skills_container {
+  .skills-container {
     padding: calc(7 * var(--spacing));
     gap: calc(8 * var(--spacing));
     max-height: fit-content;

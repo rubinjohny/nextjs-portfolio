@@ -74,7 +74,7 @@ export const skills = [
     img: "/skills/android-logo.svg",
   },
   {
-    title: "IOS (Xcode)",
+    title: "Xcode",
     img: "/skills/apple-logo.svg",
   },
 ];
