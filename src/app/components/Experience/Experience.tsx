@@ -19,7 +19,7 @@ const CompanyCard = ({
       </div>
       <>
         <div className={styles["sub-title-cont"]}>
-          <PersonBadge color="#000" size={24} />
+          <PersonBadge color="#000" size={32} />
           <span>{designation}</span>
         </div>
         <div className={styles["term-loc-cont"]}>
@@ -42,15 +42,14 @@ const CompanyCard = ({
 const OPTIONS: EmblaOptionsType = { containScroll: false };
 
 const experienceCards = companies.map((company, i) => (
-  <div key={i}>
-    <CompanyCard
-      logo={company.logo}
-      summary={company.summary}
-      designation={company.designation}
-      location={company.location}
-      term={company.term}
-    />
-  </div>
+  <CompanyCard
+    key={i}
+    logo={company.logo}
+    summary={company.summary}
+    designation={company.designation}
+    location={company.location}
+    term={company.term}
+  />
 ));
 
 export const Experience = () => {

@@ -18,6 +18,7 @@
 .container-hats .text-gradient {
   background: linear-gradient(
     to right,
+    var(--light-blue) 0%,
     var(--darker-blue) 25%,
     var(--blue) 50%,
     var(--light-green) 75%,
@@ -64,8 +65,6 @@
   }
 }
 
-/* ------------------------------ */
-
 .blob {
   display: block;
   position: relative;
@@ -76,14 +75,6 @@
   height: 300px;
   overflow: hidden;
   border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
-  /* background: linear-gradient(
-    to right,
-    #23d5ab,
-    #23a6d5,
-    #e73c7e,
-    #ee7752,
-    #ddd6f3
-  ); */
 
   background: white;
   background-size: 500% 100%;
