@@ -1,3 +1,11 @@
+.outer-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 .container {
   max-width: var(--max-width);
 }
@@ -9,9 +17,18 @@
 
 .bottom-section {
   position: absolute;
-  bottom: 25%;
+  bottom: 150px;
   margin: 0 20px;
   font-size: 1.25rem;
+}
+
+.learn-more-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 300px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -21,16 +38,7 @@
     right: 0;
     margin: auto;
     text-align: center;
-    bottom: 20%;
+    bottom: 150px;
     font-size: 1.5rem;
   }
-}
-
-.learn-more-btn {
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  max-width: 300px;
 }

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Arimo } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
-const ArimoFont = Arimo({ subsets: ["latin"] });
+const InterFont = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Rubin Johny",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={ArimoFont.className}>
+      <body className={InterFont.className}>
         <div id="root">
           <ThemeProvider enableSystem>{children}</ThemeProvider>
         </div>
