@@ -22,16 +22,7 @@
 
 body {
   color: var(--foreground-color);
-  /* background: var(--background-color); */
-
-  background: linear-gradient(
-    180deg,
-    var(--intro-bg-trans-color-1),
-    var(--intro-bg-trans-color-2),
-    var(--intro-bg-trans-color-3)
-  );
-  background-size: 600% 600%;
-  animation: BackgroundTransistion 20s ease infinite;
+  background-color: var(--background-color);
 }
 
 [data-theme="dark"],
@@ -52,21 +43,4 @@ body {
   --intro-bg-trans-color-1: #e7eaee;
   --intro-bg-trans-color-2: #cadbe3;
   --intro-bg-trans-color-3: #b6ddf6;
-}
-
-.page-container {
-}
-
-@keyframes BackgroundTransistion {
-  0% {
-    background-position: 51% 0%;
-  }
-
-  50% {
-    background-position: 50% 100%;
-  }
-
-  100% {
-    background-position: 51% 0%;
-  }
 }

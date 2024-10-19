@@ -11,9 +11,7 @@ export const LandingSection = () => {
         <div className={styles.main}>
           <ThemeToggler />
         </div>
-        <div>
-          <VenomWeb />
-        </div>
+        <VenomWeb />
         <div className={styles["bottom-section"]}>
           <TypeWriter />
         </div>
