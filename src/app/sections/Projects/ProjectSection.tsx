@@ -17,7 +17,7 @@ const containerVariants = {
     y: 0,
     transition: {
       staggerChildren: 0.1,
-      delayChildren: 1,
+      delayChildren: 0.5,
     },
   },
 };
@@ -41,7 +41,6 @@ export const ProjectSection = () => {
           <motion.div
             variants={containerVariants}
             initial="hidden"
-            animate="show"
             whileInView="show"
             viewport={{
               once: true,

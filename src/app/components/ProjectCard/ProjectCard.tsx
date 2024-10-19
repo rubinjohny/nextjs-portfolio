@@ -6,11 +6,11 @@ import styles from "./styles.module.css";
 const imgVariants = {
   hidden: {
     opacity: 0,
-    y: -100,
+    scale: 0,
   },
   show: {
     opacity: 1,
-    y: 0,
+    scale: 1,
   },
 };
 
@@ -37,7 +37,11 @@ type ProjectCardProps = {
 export const ProjectCard = ({ title, image, onExpand }: ProjectCardProps) => {
   return (
     <motion.div className={styles["container"]}>
-      <motion.div className={styles["base-card"]} variants={imgVariants}>
+      <motion.div
+        className={styles["base-card"]}
+        variants={imgVariants}
+        transition={{ duration: 0.2 }}
+      >
         <Image
           src={image}
           alt={title}
