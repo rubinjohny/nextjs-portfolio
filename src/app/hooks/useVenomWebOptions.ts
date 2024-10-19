@@ -137,7 +137,7 @@ export const useVenomWebOptions = () => {
         else if(isDesktop && width <= 1500) return smallDesktopOptions
         else if(isDesktop && width > 1500) return largeDesktopOptions
         else return { ...defaultOptions };
-    }, [isMobile, width, theme]);
+    }, [isMobile,isDesktop, isLaptop, isTablet, width, theme]);
 
     return {options};
 }
