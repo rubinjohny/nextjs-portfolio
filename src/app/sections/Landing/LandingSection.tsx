@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 export const LandingSection = () => {
   return (
-    <div className={styles["outer-container"]}>
+    <div className={styles["outer-container"]} id="landing">
       <div className={styles.container}>
         <div className={styles.main}>
           <ThemeToggler />

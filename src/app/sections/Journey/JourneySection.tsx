@@ -6,7 +6,7 @@ import { JourneyText } from "@/app/utils/sectionTexts";
 export const JourneySection = () => {
   return (
     <>
-      <SectionHeader title="Journey" />
+      <SectionHeader title="Journey" id="journey" />
       <Section>
         <div className={styles["container"]}>
           <span>{JourneyText}</span>

@@ -6,8 +6,8 @@ import { AboutMeDescription } from "@/app/components/AboutMeDescription/AboutMeD
 
 export const AboutSection = () => {
   return (
-    <div className={styles.mt} id="about-me">
-      <SectionHeader title="About me" />
+    <div className={styles.mt}>
+      <SectionHeader title="About me" id="about-me" />
       <Section>
         <div className={styles["container"]}>
           <AboutMeDescription />

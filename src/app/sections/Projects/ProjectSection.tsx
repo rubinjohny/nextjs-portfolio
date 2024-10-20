@@ -30,7 +30,7 @@ export const ProjectSection = () => {
 
   return (
     <>
-      <SectionHeader title="Projects" />
+      <SectionHeader title="Projects" id="projects" />
       <Section>
         <div className={styles["container"]}>
           <span>
