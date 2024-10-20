@@ -1,0 +1,13 @@
+.container {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 4px;
+  background: var(--red);
+  transform-origin: 0%;
+  background-color: var(--green);
+}
