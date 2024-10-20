@@ -8,9 +8,9 @@ export const Section = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export const SectionHeader = ({ title }: { title: string }) => {
+export const SectionHeader = ({ title, id }: { title: string; id: string }) => {
   return (
-    <div className={styles["section-header"]}>
+    <div className={styles["section-header"]} id={id}>
       <span>{title}</span>
     </div>
   );
