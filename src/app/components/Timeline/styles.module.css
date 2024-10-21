@@ -83,8 +83,8 @@
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   .timeline {
     margin-left: 0px;
     & > ul > li {
@@ -110,7 +110,7 @@
             top: -15px;
             left: unset;
             right: -100%;
-            width: 80%;
+            width: 75%;
             text-align: left;
           }
         }
@@ -138,7 +138,7 @@
             left: -100%;
             right: unset;
             text-align: end;
-            width: 80%;
+            width: 75%;
           }
         }
       }

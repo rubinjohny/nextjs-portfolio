@@ -27,7 +27,7 @@ export const milestones = [
     icon: "Marriage",
     title: "Married by best Friend",
     description:
-      "After two decades of knowing each other, I finally decided I couldn’t pass up on the tax benefits any longer. Now, we’re happily married and kicking off our new adventure.",
+      "After two decades of knowing each other, I finally decided I couldn’t pass up on the tax benefits any longer. Now, we’re happily married and kicking off our new adventure. Talk about escaping the friend-zone!",
     date: "May 2024",
   },
   {
@@ -37,13 +37,13 @@ export const milestones = [
       "My wife wanted something unique for our wedding, so I bravely stepped up and tore my right ACL playing football. Fortunately, I was back on my feet in two months, but I had to rock leg braces on the big day. My mates dubbed me ‘The Terminator’—though, she was less than impressed",
     date: "April 2024",
   },
-  {
-    icon: "Proposal",
-    title: "Proposed to my Best Friend",
-    description:
-      "Talk about escaping the friend-zone! It only took me two decades to fly to Australia and surprise my girlfriend with a proposal. Spoiler: she said yes!",
-    date: "Nov 2024",
-  },
+  // {
+  //   icon: "Proposal",
+  //   title: "Proposed to my Best Friend",
+  //   description:
+  //     "Talk about escaping the friend-zone! It only took me two decades to fly to Australia and surprise my girlfriend with a proposal. Spoiler: she said yes!",
+  //   date: "Nov 2024",
+  // },
   {
     icon: "Mountain",
     title: "Conquered Mt.Whitney",

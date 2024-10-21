@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 const imgVariants = {
   hidden: {
     opacity: 0,
-    scale: 0,
+    scale: 0.5,
   },
   show: {
     opacity: 1,
@@ -23,7 +23,7 @@ const contentVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 2.3,
+      delay: 1.5,
     },
   },
 };

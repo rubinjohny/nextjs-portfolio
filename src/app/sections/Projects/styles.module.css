@@ -5,6 +5,10 @@
   margin-top: 40px;
   flex: 1 1;
   text-align: center;
+
+  & > span {
+    margin: 0 calc(4 * var(--spacing));
+  }
 }
 
 .projects-grid {

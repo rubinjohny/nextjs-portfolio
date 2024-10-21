@@ -17,13 +17,13 @@ export const ProjectSheet = ({
       isOpen={open}
       onClose={() => onClose()}
       rootId="root"
-      // detent="content-height"
+      detent="content-height"
     >
       <Sheet.Container className={styles["sheet-container"]}>
         <Sheet.Header />
         <Sheet.Content>{data && <SheetContent data={data} />}</Sheet.Content>
       </Sheet.Container>
-      <Sheet.Backdrop />
+      <Sheet.Backdrop onTap={onClose} />
     </Sheet>
   );
 };
