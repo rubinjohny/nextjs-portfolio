@@ -117,7 +117,11 @@ const ExperienceCarousel: React.FC<PropType> = (props) => {
 
       <div className={styles["embla__controls"]}>
         <div className={styles["embla__buttons"]}>
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+          <PrevButton
+            onClick={onPrevButtonClick}
+            disabled={prevBtnDisabled}
+            aria-label={"previous experience button"}
+          />
           <div className={styles["embla__dots"]}>
             {scrollSnaps.map((_, index) => (
               <DotButton
@@ -127,10 +131,15 @@ const ExperienceCarousel: React.FC<PropType> = (props) => {
                   styles["embla__dot"],
                   index === selectedIndex && styles["embla__dot--selected"]
                 )}
+                aria-label={`experience button ${index}`}
               />
             ))}
           </div>
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+          <NextButton
+            onClick={onNextButtonClick}
+            disabled={nextBtnDisabled}
+            aria-label={"next experience button"}
+          />
         </div>
       </div>
     </div>

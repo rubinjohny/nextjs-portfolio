@@ -29,6 +29,7 @@ export const ThemeToggler = () => {
         onColor={Black}
         onChange={(_) => setTheme(theme === "dark" ? "light" : "dark")}
         checked={resolvedTheme === "dark"}
+        aria-label="toggle-theme"
       />
     </div>
   );
