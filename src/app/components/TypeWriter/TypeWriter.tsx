@@ -13,7 +13,7 @@ export const TypeWriter = () => {
   };
 
   return (
-    <>
+    <div aria-hidden="true">
       <TypewriterComponent
         options={{
           autoStart: true,
@@ -54,6 +54,6 @@ export const TypeWriter = () => {
             .start();
         }}
       />
-    </>
+    </div>
   );
 };

@@ -24,11 +24,11 @@ const CompanyCard = ({
         </div>
         <div className={styles["term-loc-cont"]}>
           <div>
-            <LocationIcon color="#a9a9a9" size={24} />
+            <LocationIcon color="#6a6a6a" size={24} />
             <span>{location}</span>
           </div>
           <div>
-            <CalendarIcon color="#a9a9a9" size={24} />
+            <CalendarIcon color="#6a6a6a" size={24} />
             <span>{term}</span>
           </div>
         </div>

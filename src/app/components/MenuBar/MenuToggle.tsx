@@ -41,6 +41,7 @@ export const MenuToggle = ({ toggle }: Props) => {
       onClick={toggle}
       className={styles["menu-btn"]}
       variants={variant}
+      aria-label="Toggle sidebar"
     >
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
