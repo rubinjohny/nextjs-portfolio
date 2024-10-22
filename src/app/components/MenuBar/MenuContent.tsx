@@ -50,45 +50,49 @@ export const MenuCotent = ({ toggle }: MenuContentProps) => {
 
   return (
     <motion.ul variants={ulvariants} className={styles["ul"]}>
-      {MenuItems.map((item, i) => (
-        <motion.li
-          key={i}
-          variants={livariants}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          className={styles["li"]}
-          onClick={() => onSelectMenuItem(item.id as ElementIds)}
-        >
-          <div className={styles["icon-placeholder"]}>{item.icon}</div>
-          <div className={styles["text-placeholder"]}>
-            <span>{item.text}</span>
-          </div>
-        </motion.li>
-      ))}
+      <div className={styles["outer-container"]}>
+        {MenuItems.map((item, i) => (
+          <motion.li
+            key={i}
+            variants={livariants}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className={styles["li"]}
+            onClick={() => onSelectMenuItem(item.id as ElementIds)}
+          >
+            <div className={styles["icon-placeholder"]}>{item.icon}</div>
+            <div className={styles["text-placeholder"]}>
+              <span>{item.text}</span>
+            </div>
+          </motion.li>
+        ))}
 
-      <motion.li variants={livariants} className={styles["li"]}>
-        <span className={styles["contact-span"]}>Contact me</span>
-      </motion.li>
+        <div className={styles["inner-container"]}>
+          <motion.li variants={livariants} className={styles["li"]}>
+            <span className={styles["contact-span"]}>Contact me</span>
+          </motion.li>
 
-      <motion.li variants={livariants} className={styles["li"]}>
-        <motion.div
-          variants={ulvariants}
-          className={styles["contact-container"]}
-        >
-          {ContactItems.map((item, i) => (
+          <motion.li variants={livariants} className={styles["li"]}>
             <motion.div
-              key={i}
-              variants={livariants}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
+              variants={ulvariants}
+              className={styles["contact-container"]}
             >
-              <a target="_blank" href={item.href}>
-                {item.icon}
-              </a>
+              {ContactItems.map((item, i) => (
+                <motion.div
+                  key={i}
+                  variants={livariants}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <a target="_blank" href={item.href}>
+                    {item.icon}
+                  </a>
+                </motion.div>
+              ))}
             </motion.div>
-          ))}
-        </motion.div>
-      </motion.li>
+          </motion.li>
+        </div>
+      </div>
     </motion.ul>
   );
 };
