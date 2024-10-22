@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "./styles.module.css";
+import { useWidth } from "@/app/hooks/useWindowWidth";
+import { ArrowUp } from "@/app/utils/icons";
 
 const imgVariants = {
   hidden: {
@@ -35,6 +37,10 @@ type ProjectCardProps = {
 };
 
 export const ProjectCard = ({ title, image, onExpand }: ProjectCardProps) => {
+  const { isMobile, isTablet } = useWidth();
+
+  const showMoreIcon = isMobile || isTablet;
+
   return (
     <motion.div className={styles["container"]}>
       <motion.div
@@ -60,6 +66,11 @@ export const ProjectCard = ({ title, image, onExpand }: ProjectCardProps) => {
       >
         <div className={styles["title-container"]}>
           <span>{title}</span>
+          {showMoreIcon && (
+            <div className={styles["arrow"]}>
+              <ArrowUp size={16} />
+            </div>
+          )}
         </div>
         <div className={styles["learn-more-btn"]}>
           <span>Learn More</span>

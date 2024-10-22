@@ -12,6 +12,7 @@ import {
   FaLinkedin,
   FaGithub,
   FaInstagram,
+  FaCircleArrowUp,
 } from "react-icons/fa6";
 import { CiCalendarDate } from "react-icons/ci";
 import { ImAirplane } from "react-icons/im";
@@ -28,6 +29,7 @@ import { GrProjects } from "react-icons/gr";
 
 export const LightSun = (props: IconBaseProps) => <ImSun {...props} />;
 export const DarkMoon = (props: IconBaseProps) => <PiMoonStars {...props} />;
+export const ArrowUp = (props: IconBaseProps) => <FaCircleArrowUp {...props} />;
 export const PersonBadge = (props: IconBaseProps) => (
   <BsPersonBadge {...props} />
 );

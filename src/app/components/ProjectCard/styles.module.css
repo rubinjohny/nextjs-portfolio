@@ -1,40 +1,15 @@
 .container {
-  height: 40vh;
+  height: 30vh;
   position: relative;
   background-color: #fdfffc;
 
   border-radius: 12px;
   transition: all ease-in-out 0.5s;
-  &:hover {
-    background-color: #5998c5;
-  }
 
-  &:hover .content {
-    box-shadow: 0px 8px 8px rgba(38, 38, 38, 0.2);
-    transition: all 0.5s;
-    border: 2px solid white;
-    background-color: var(--darkest-blue);
-    color: white;
-    cursor: pointer;
-  }
-
-  &:hover .title-container {
-    display: none;
-  }
-
-  &:hover .learn-more-btn {
-    display: block;
-  }
-
-  &:hover .base-card > img {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  &:hover .base-card {
-    top: 8px;
-    left: 8px;
-    right: 8px;
+  & > .base-card {
+    left: 4px;
+    right: 4px;
+    top: 4px;
   }
 }
 
@@ -43,10 +18,7 @@
   display: flex;
   flex: 1 1;
   position: absolute;
-  bottom: 88px;
-  left: 20px;
-  right: 20px;
-  top: 20px;
+  bottom: 5px;
 
   & > img {
     border-radius: 12px;
@@ -60,12 +32,11 @@
 .content {
   background-color: #5998c5;
   color: white;
-  z-index: 2;
   position: absolute;
   bottom: 12px;
   left: 20px;
   right: 20px;
-  height: 60px;
+  height: 40px;
   display: flex;
   flex: 1;
   justify-content: center;
@@ -77,10 +48,76 @@
   display: none;
 }
 
+.title-container {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 2px;
+  right: -32px;
+  bottom: 0;
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .container {
+    height: 40vh;
+  }
+
   .content {
     font-size: 1.2rem;
     letter-spacing: 4px;
+  }
+
+  .base-card {
+    left: 20px;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    &:hover {
+      background-color: #5998c5;
+    }
+
+    &:hover .content {
+      box-shadow: 0px 8px 8px rgba(38, 38, 38, 0.2);
+      transition: all 0.5s;
+      border: 2px solid white;
+      background-color: var(--darkest-blue);
+      color: white;
+      cursor: pointer;
+    }
+
+    &:hover .title-container {
+      display: none;
+    }
+
+    &:hover .learn-more-btn {
+      display: block;
+    }
+
+    &:hover .base-card > img {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:hover .base-card {
+      top: 8px;
+      left: 8px;
+      right: 8px;
+    }
+  }
+
+  .content {
+    height: 60px;
+  }
+
+  .base-card {
+    bottom: 88px;
   }
 }
