@@ -7,7 +7,7 @@ const InterFont = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Rubin Johny",
-  description: "Portfolio for Rubin Johny | 2024",
+  description: "Portfolio | 2024",
 };
 
 export default function RootLayout({
