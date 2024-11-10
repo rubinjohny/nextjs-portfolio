@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "Rubin's portfolio website. Take a look at the cool stuff I've build over the past 7 years as a software engineer",
     creator: "@rubinjohny",
     images: {
-      url: "https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/og-card.png",
+      url: "https://pinfkw3gneg9cnan.public.blob.vercel-storage.com/rubin-johny-cover-m6OkirOfexRe8Gp20CyDOwDDGnnuMI.jpg",
       alt: "Preview image for Rubin Johny",
     },
   },
